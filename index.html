@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Frontend Mentor | Bento grid</title>
+</head>
+<body class = 'flex flex-col m-0 p-4 md:p-0 md:h-screen bg-gray-100 font-dmsans font-normal text-textblack'>
+  <main class = 'grid gap-6 grid-flow-row m-auto md:max-w-[900px] md:max-h-[700px] *:rounded-lg grid-cols-1 md:grid-cols-4 grid-rows-[repeat(auto,8)] md:grid-rows-[6fr_1fr_3fr_5fr]'>
+    <div class = 'flex flex-col gap-1 justify-center bg-bgPurple2 order-1 md:order-2 md:col-span-2 p-8 md:p-4 text-center text-white'>
+      <h1 class = 'text-4xl md:text-5xl mb-4 font-medium'>Social Media <span class = 'text-bgYellow2'>10x</span> <em>Faster</em> with AI</h1>
+      <img src = './assets/images/illustration-five-stars.webp' class = 'w-3/4 md:w-2/5 mx-auto'>
+      <p class = 'text-base md:text-sm'>Over 4,000 5-star reviews</p>
+    </div>
+    <div class = 'flex flex-col gap-2 justify-around bg-white order-2 md:order-4 p-4 overflow-hidden md:row-span-2'>
+      <img src = './assets/images/illustration-multiple-platforms.webp' class = 'md:min-w-[150%] object-cover object-left'>
+      <p class = 'font-medium tracking-tightest text-2xl leading-6 text-textblack'>Manage multiple accounts and platforms.</p>
+    </div>
+    <div class = 'flex flex-col gap-4 md:gap-2 bg-bgYellow2 order-3 md:order-5 p-4 pb-0 md:pb-4 overflow-hidden md:row-span-2'>
+      <p class = 'font-medium tracking-tightest text-2xl leading-5 text-textblack'>Maintain a consistent posting schedule.</p>
+      <img src = './assets/images/illustration-consistent-schedule.webp' class = 'w-2/3 md:min-w-[110%] object-contain md:object-cover object-top'>
+    </div>
+    <div class = 'flex flex-col gap-4 bg-bgPurple1 order-4 md:order-3 p-6 overflow-hidden md:row-span-3 text-textblack'>
+      <p class = 'font-medium tracking-tightest text-2xl leading-5'>Schedule to social media.</p>
+      <img src = './assets/images/illustration-schedule-posts.webp' class = 'md:min-w-[185%] object-cover object-left'>
+      <p class = 'text-sm tracking-tighter leading-4 text-center md:text-left px-6 md:px-0'>Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+    <div class = 'flex flex-col md:flex-row justify-center content-center gap-6 md:gap-4 p-6 md:p-4 bg-bgPurple2 order-5 md:order-8 md:col-span-2'>
+      <img src = './assets/images/illustration-grow-followers.webp' class = 'w-3/4 object-contain m-auto'>
+      <p class = 'font-medium text-2xl tracking-tightest leading-6 place-content-center text-center md:text-left px-10 md:px-0 text-white'>Grow followers with non-stop content.</p>
+    </div>
+    <div class = 'flex flex-col gap-2 justify-between bg-white order-6 md:order-7 p-4'>
+      <p class = 'text-sm md:text-xs text-textblack flex-grow leading-6'><span class = 'text-4xl md:text-5xl font-medium'>>56%</span><br> faster audience growth</p>
+      <img src = './assets/images/illustration-audience-growth.webp' class = 'w-1/2 md:w-3/4'>
+    </div>
+    <div class = 'flex flex-col gap-4 justify-center p-6 bg-bgYellow1 order-7 md:order-1 md:row-span-2 '>
+      <p class = 'font-medium tracking-tightest text-3xl md:text-2xl leading-6 text-textblack'>Create and schedule content <span class='text-bgPurple2 italic leading-6'>quicker.</span></p>
+      <img src = './assets/images/illustration-create-post.webp' class = 'w-2/3 md:w-11/12 md:mx-auto'>
+    </div>
+    <div class = 'flex flex-col justify-between bg-bgYellow2 order-8 md:order-6 md:row-span-2'>
+      <p class = 'font-medium tracking-tightest text-3xl leading-6 text-textblack p-5 pb-0 md:pb-5'>Write your content using AI.</p>
+      <img src = './assets/images/illustration-ai-content.webp' class = 'w-3/4 md:w-full md:mx-auto p-5 pr-2'>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Bledan</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root { font-size: 18px;}
+}
+
+@layer components{
+    body { font-size: clamp(18px, calc(18px + (54–18) * (100vw - 360px)/(1920–360)), 54px); }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .desktopgrid {
+        grid-template-areas: 
+          'seven one one four'
+          'seven two three four'
+          'eight two three four'
+          'eight six five five'
+          ;
+    }
+    .bigtext {
+        font-weight: 500;
+        letter-spacing: -0.1rem;
+        line-height: 1.25rem;
+    }
+}
